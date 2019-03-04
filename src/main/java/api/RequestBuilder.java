@@ -28,8 +28,10 @@ public class RequestBuilder {
         conn.disconnect();
         if (httpResponse != null) {
             FrameWorkLauncher.result.add("sendHTTPRequest,Pass");
+            System.out.println("sendHTTPRequest:Pass");
         } else {
             FrameWorkLauncher.result.add("sendHTTPRequest,Fail");
+            System.out.println("sendHTTPRequest:Fail");
         }
 
         return httpResponse;

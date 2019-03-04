@@ -40,8 +40,10 @@ public class SeleniumActions {
         driver.close();
         if (list.size() == 0) {
             FrameWorkLauncher.result.add("selectFlightFrom,Fail");
+            System.out.println("selectFlightFrom:Fail");
         } else {
             FrameWorkLauncher.result.add("selectFlightFrom,Pass");
+            System.out.println("selectFlightFrom:Pass");
         }
 
 

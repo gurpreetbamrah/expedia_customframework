@@ -31,9 +31,11 @@ public class DBUtils {
         }
         if(row_count.equals(0)) {
             FrameWorkLauncher.result.add("executeQuery,Fail");
+            System.out.println("executeQuery:Fail");
         }
         else {
             FrameWorkLauncher.result.add("executeQuery,Pass");
+            System.out.println("executeQuery:Pass");
         }
         return row_count;
     }
@@ -42,10 +44,12 @@ public class DBUtils {
         int expectedcount = Integer.parseInt(String.valueOf(JsonHandler.foundValues.size()));
        if(expectedcount!=Integer.parseInt(row_count)){
            FrameWorkLauncher.result.add("verifyresultCount,Fail");
+           System.out.println("verifyresultCount:Fail");
        }
 
        else {
            FrameWorkLauncher.result.add("verifyresultCount,Pass");
+           System.out.println("verifyresultCount:Pass");
        }
     }}
 //}

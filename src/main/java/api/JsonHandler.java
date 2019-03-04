@@ -22,8 +22,10 @@ public class JsonHandler {
         }
         if (foundValues != null) {
             FrameWorkLauncher.result.add("getValueFromJson,Pass");
+            System.out.println("getValueFromJson:Pass");
         } else {
             FrameWorkLauncher.result.add("getValueFromJson,Fail");
+            System.out.println("getValueFromJson:Fail");
         }
         return foundValues;
     }
